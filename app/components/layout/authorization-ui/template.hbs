@@ -1,5 +1,10 @@
 {{#if session.isAuthenticated}}
   Logged in as {{session.currentUser.displayName}}
+  <img src="{{session.currentUser.photoURL}}" class="avatar">
+  {{#paper-button mini=true aria-label="Favorite"}}
+  {{paper-icon "favorite"}}
+  
+  {{/paper-button}}
   <button {{action "signOut"}}>Sign out</button>
 {{else}}
   <button {{action "signIn" "Google"}}>Sign in Google</button>

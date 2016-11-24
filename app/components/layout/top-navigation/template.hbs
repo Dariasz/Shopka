@@ -4,12 +4,10 @@
        {{paper-icon "menu"}}
      {{/paper-button}}
        <h2>Shopka</h2>
-       <span class="flex"></span>
+       <span class="flex">
+{{input value=searchTerm }}
+       </span>
 
-         {{layout.authorization-ui}}
-
-       {{#paper-button mini=true aria-label="Favorite"}}
-        {{paper-icon "favorite"}}
-       {{/paper-button}}
+       {{layout.authorization-ui}}
      {{/toolbar.tools}}
    {{/paper-toolbar}}
