@@ -1,0 +1,15 @@
+  {{#paper-toolbar as |toolbar|}}
+     {{#toolbar.tools}}
+     {{#paper-button iconButton=true class="hide-gt-sm" onClick=(action toggleSlideNav)}}
+       {{paper-icon "menu"}}
+     {{/paper-button}}
+       <h2>Shopka</h2>
+       <span class="flex"></span>
+
+         {{layout.authorization-ui}}
+
+       {{#paper-button mini=true aria-label="Favorite"}}
+        {{paper-icon "favorite"}}
+       {{/paper-button}}
+     {{/toolbar.tools}}
+   {{/paper-toolbar}}

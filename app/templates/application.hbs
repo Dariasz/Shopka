@@ -1,0 +1,9 @@
+{{layout.top-navigation toggleSlideNav=(action 'toggleSlideNav')}}
+
+
+{{#paper-sidenav-container class="inner-sidenav "}}
+
+  {{layout.side-navigation leftSideBarOpen=leftSideBarOpen}}
+
+  {{outlet}}
+{{/paper-sidenav-container}}

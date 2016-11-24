@@ -6,6 +6,7 @@ module.exports = function(environment) {
     environment: environment,
     rootURL: '/',
     locationType: 'auto',
+    torii:{ sessionServiceName: 'session'},
     EmberENV: {
       FEATURES: {
         // Here you can enable experimental features on an ember canary build
@@ -18,13 +19,19 @@ module.exports = function(environment) {
     },
 
     APP: {
-      apiKey: "AIzaSyCdKvRJ3aZfWUV0zBtfl05_qWDSU2TH1tY",
-      authDomain: "shopka-6e923.firebaseapp.com",
-      databaseURL: "https://shopka-6e923.firebaseio.com",
-      storageBucket: "shopka-6e923.appspot.com",
-      messagingSenderId: "995360979601"
 
-    }
+
+    },
+    firebase:{
+      apiKey: "AIzaSyCdKvRJ3aZfWUV0zBtfl05_qWDSU2TH1tY",
+   authDomain: "shopka-6e923.firebaseapp.com",
+   databaseURL: "https://shopka-6e923.firebaseio.com",
+   storageBucket: "shopka-6e923.appspot.com",
+   messagingSenderId: "995360979601"
+
+ }
+
+
   };
 
   if (environment === 'development') {
